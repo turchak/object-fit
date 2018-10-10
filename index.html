@@ -18,13 +18,15 @@
 
         .img--cover {
             object-fit: cover;
-            object-position: left top;
+            object-position: center center;
         }
     </style>
 </head>
 <body>
     <img class="img img--cover" src="green.jpg" alt="green">
-    <svg role="image" aria-label="green" viewBox="0 0 640 960" class="img">
+    <svg role="image" aria-label="green" 
+         preserveAspectRatio="xMidYMid slice"
+         viewBox="0 0 640 960" class="img">
         <image xlink:href="green.jpg"></image>
     </svg>
 </body>
